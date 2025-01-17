@@ -6,9 +6,11 @@ public class platformMovement : MonoBehaviour
 {
     private Rigidbody2D rb2D;
     private Vector2 dirVector;
-    public float speed = 5, jumpForce = 5, sphereRadius = 0.15f;
+    public float speed = 5, jumpForce = 7, sphereRadius = 0.15f;
+    private float currentTime = 0;
     private bool isJumping = false;
     public LayerMask groundMask;
+    // posInicial = -9.42, -1.49
     void Start()
     {
         rb2D = GetComponent<Rigidbody2D>();
@@ -17,6 +19,7 @@ public class platformMovement : MonoBehaviour
     {
         dirVector = new Vector2(Input.GetAxis("Horizontal"), 0); // Movimiento horizontal.
         Jump();
+        currentTime = Time.deltaTime;
     }
     private void FixedUpdate()
     {
@@ -25,12 +28,12 @@ public class platformMovement : MonoBehaviour
     }
     void Jump()
     {
-        if (Input.GetButtonDown("Jump") && IsGrounded())
+        if (Input.GetButtonDown("Jump") && IsGrounded()) // Si está presionando saltar Y está en el suelo, siendo detectado mediante el método IsGrounded.
         {
-            isJumping = true;
+            isJumping = true; // Activa isJumping.
         }
     }
-    void ApplyJump()
+    public void ApplyJump()
     {
         if (isJumping)
         {
@@ -50,21 +53,8 @@ public class platformMovement : MonoBehaviour
         Gizmos.color = Color.blue;
         Gizmos.DrawWireSphere(new Vector2(transform.position.x, transform.position.y - transform.localScale.y / 2), sphereRadius);
     }
-
-
-
-
-
-    // Esta es una forma de hacer para que no pueda saltar en el aire.
-    // private bool canJump;
-    //private void OnCollisionEnter2D(Collision2D collision)
-    //{
-    //    if(collision.gameObject.layer == LayerMask.NameToLayer("Ground"))
-    //    canJump = true;
-    //}
-    //private void OnCollisionExit2D(Collision2D collision)
-    //{
-    //    if (collision.gameObject.layer == LayerMask.NameToLayer("Ground"))
-    //    canJump = false;
-    //}
+    public void ResetPlayerPos()
+    {
+        gameObject.transform.position = new Vector2(-10.52f, -1.49f);
+    }
 }
