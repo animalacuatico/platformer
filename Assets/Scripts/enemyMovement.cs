@@ -7,7 +7,7 @@ public class enemyMovement : MonoBehaviour
 {
     private Rigidbody2D rb2d;
     private Vector2 dirVector;
-    public float enemySpeed = 3;
+    public float enemySpeed = 2;
     public LayerMask playerMask;
     public GameObject enemy, assignedPlayer;
     private Vector2 xpos;
@@ -19,7 +19,7 @@ public class enemyMovement : MonoBehaviour
     void Update()
     {
         enemyPosX = assignedPlayer.transform.position.x;
-        xpos = new Vector2(enemyPosX, 0);
+        xpos = new Vector2(enemyPosX, transform.position.y);
         transform.position = Vector2.MoveTowards(transform.position, xpos, enemySpeed * Time.deltaTime);
         if (CheckSides())
         {
@@ -38,7 +38,7 @@ public class enemyMovement : MonoBehaviour
     }
     bool CheckTop()
     {
-        bool outcome = Physics2D.Raycast(transform.position, Vector2.up, 0.5f, playerMask);
+        bool outcome = Physics2D.Raycast(transform.position, Vector2.up, 0.55f, playerMask);
         return outcome;
     }
 

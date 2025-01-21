@@ -101,5 +101,5 @@ MonoBehaviour:
   playerMask:
     serializedVersion: 2
     m_Bits: 128
+  enemy: {fileID: 4682157856880954132}
   assignedPlayer: {fileID: 0}
-  enemy: {fileID: 0}

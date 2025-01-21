@@ -9,8 +9,8 @@ public class platformMovement : MonoBehaviour
     public float speed = 5, jumpForce = 7, sphereRadius = 0.15f;
     private float currentTime = 0;
     private bool isJumping = false;
+
     public LayerMask groundMask;
-    // posInicial = -9.42, -1.49
     void Start()
     {
         rb2D = GetComponent<Rigidbody2D>();
