@@ -4,13 +4,10 @@ using UnityEngine;
 
 public class deathZones : MonoBehaviour
 {
-    // Start is called before the first frame update
     void Start()
     {
         
     }
-
-    // Update is called once per frame
     void Update()
     {
         

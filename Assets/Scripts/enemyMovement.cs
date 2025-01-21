@@ -28,7 +28,6 @@ public class enemyMovement : MonoBehaviour
         if (CheckTop())
         {
             Destroy(gameObject);
-            assignedPlayer.GetComponent<platformMovement>().ApplyJump();
         }
     }
     bool CheckSides()
