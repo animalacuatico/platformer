@@ -1,7 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+public enum PlayerState { IDLE, WALKING, JUMPING }
 public class platformMovement : MonoBehaviour
 {
     private Rigidbody2D rb2D;
@@ -9,6 +9,8 @@ public class platformMovement : MonoBehaviour
     public float speed = 5, jumpForce = 7, sphereRadius = 0.15f;
     private float currentTime = 0;
     private bool isJumping = false;
+    [SerializeField]
+    private PlayerState currentstate;
 
     public LayerMask groundMask;
     void Start()
@@ -18,6 +20,14 @@ public class platformMovement : MonoBehaviour
     void Update()
     {
         dirVector = new Vector2(Input.GetAxis("Horizontal"), 0); // Movimiento horizontal.
+        if (dirVector.magnitude == 0) // Si no nos estamos moviendo, calculando la medida del vector actual.
+        {
+            currentstate = PlayerState.IDLE; // Se cambia el estado del jugador a IDLE.
+        }
+        else
+        {
+            currentstate = PlayerState.WALKING; // Si no, se cambia el estado del jugador a WALKING.
+        }
         Jump();
         currentTime = Time.deltaTime;
     }
@@ -31,6 +41,7 @@ public class platformMovement : MonoBehaviour
         if (Input.GetButtonDown("Jump") && IsGrounded()) // Si está presionando saltar Y está en el suelo, siendo detectado mediante el método IsGrounded.
         {
             isJumping = true; // Activa isJumping.
+            currentstate = PlayerState.JUMPING; // Cambia el estado del jugador a JUMPING.
         }
     }
     public void ApplyJump()
@@ -48,13 +59,21 @@ public class platformMovement : MonoBehaviour
         Collider2D colliders = Physics2D.OverlapCircle(new Vector2(transform.position.x, transform.position.y - transform.localScale.y / 2), sphereRadius, groundMask); // Se "castea" un círculo desde los "pies" del jugador.
         return colliders != null; // El círculo que hemos casteado, no está en contacto con el suelo.
     }
-    private void OnDrawGizmos()
-    {
-        Gizmos.color = Color.blue;
-        Gizmos.DrawWireSphere(new Vector2(transform.position.x, transform.position.y - transform.localScale.y / 2), sphereRadius);
-    }
+    //private void OnDrawGizmos()
+    //{
+    //    Gizmos.color = Color.blue;
+    //    Gizmos.DrawWireSphere(new Vector2(transform.position.x, transform.position.y - transform.localScale.y / 2), sphereRadius);
+    //} Esto estaba aqui pero no creo que sirva para nada.
     public void ResetPlayerPos()
     {
         gameObject.transform.position = new Vector2(-10.52f, -1.49f);
+    }
+    public PlayerState GetPlayerState()
+    {
+        return currentstate;
+    }
+    public Vector2 getDirection()
+    {
+        return dirVector;
     }
 }
