@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using Unity.VisualScripting;
 using UnityEngine;
 
-public class Deathzones1 : MonoBehaviour
+public class Deathzones : MonoBehaviour
 {
     public GameObject player;
     private void OnTriggerEnter2D(Collider2D collision)

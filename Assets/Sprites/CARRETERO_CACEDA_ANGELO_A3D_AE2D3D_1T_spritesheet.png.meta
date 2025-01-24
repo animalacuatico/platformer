@@ -1,0 +1,536 @@
+fileFormatVersion: 2
+guid: f42dd43c2cdfcab4bba2736b586555b5
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 16384
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: iPhone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: CARRETERO_CACEDA_ANGELO_A3D_AE2D3D_1T_spritesheet_0
+      rect:
+        serializedVersion: 2
+        x: 10
+        y: 128
+        width: 47
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4f0ea29e75f033b4ba8bcbaab30f9a3e
+      internalID: 784378807
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CARRETERO_CACEDA_ANGELO_A3D_AE2D3D_1T_spritesheet_1
+      rect:
+        serializedVersion: 2
+        x: 78
+        y: 128
+        width: 45
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bbb5eab11689b5844b0dd7bd3f06f5f1
+      internalID: 1192087033
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CARRETERO_CACEDA_ANGELO_A3D_AE2D3D_1T_spritesheet_2
+      rect:
+        serializedVersion: 2
+        x: 155
+        y: 128
+        width: 22
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1b4cffcf70561b04b80aeb71ab86d229
+      internalID: 1281284703
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CARRETERO_CACEDA_ANGELO_A3D_AE2D3D_1T_spritesheet_3
+      rect:
+        serializedVersion: 2
+        x: 211
+        y: 128
+        width: 31
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a13c6082bdbf1614d9eeea04ea7d05fd
+      internalID: -2038623642
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CARRETERO_CACEDA_ANGELO_A3D_AE2D3D_1T_spritesheet_4
+      rect:
+        serializedVersion: 2
+        x: 270
+        y: 128
+        width: 47
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 61c0b3fb9c812c44a99b1cda5a73a68f
+      internalID: -1468614632
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CARRETERO_CACEDA_ANGELO_A3D_AE2D3D_1T_spritesheet_5
+      rect:
+        serializedVersion: 2
+        x: 332
+        y: 128
+        width: 45
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 91b4d8877a05ee741af9d16c08b13be8
+      internalID: -1116056673
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CARRETERO_CACEDA_ANGELO_A3D_AE2D3D_1T_spritesheet_6
+      rect:
+        serializedVersion: 2
+        x: 406
+        y: 128
+        width: 22
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fe9b287b6a84ec740affe98df0c07bbb
+      internalID: 517127010
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CARRETERO_CACEDA_ANGELO_A3D_AE2D3D_1T_spritesheet_7
+      rect:
+        serializedVersion: 2
+        x: 467
+        y: 128
+        width: 31
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e62e47223dd1eba4f81fc40590f788ae
+      internalID: -2029685185
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CARRETERO_CACEDA_ANGELO_A3D_AE2D3D_1T_spritesheet_8
+      rect:
+        serializedVersion: 2
+        x: 11
+        y: 64
+        width: 47
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 901ac09761d6c144eaa3e2466a99f4ae
+      internalID: 464542387
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CARRETERO_CACEDA_ANGELO_A3D_AE2D3D_1T_spritesheet_9
+      rect:
+        serializedVersion: 2
+        x: 82
+        y: 64
+        width: 36
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b3a99a54210ba134c9f69430852c7daa
+      internalID: -2108124599
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CARRETERO_CACEDA_ANGELO_A3D_AE2D3D_1T_spritesheet_10
+      rect:
+        serializedVersion: 2
+        x: 142
+        y: 64
+        width: 45
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3604eb046a512554aa83a6636c6e7cad
+      internalID: 1776188061
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CARRETERO_CACEDA_ANGELO_A3D_AE2D3D_1T_spritesheet_11
+      rect:
+        serializedVersion: 2
+        x: 207
+        y: 64
+        width: 42
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4fc33d794d2efcd48abce6eb7a50922f
+      internalID: -2087047457
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CARRETERO_CACEDA_ANGELO_A3D_AE2D3D_1T_spritesheet_12
+      rect:
+        serializedVersion: 2
+        x: 274
+        y: 64
+        width: 42
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 78aa59af32e2d434aa5263a7577f4bba
+      internalID: -1821244033
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CARRETERO_CACEDA_ANGELO_A3D_AE2D3D_1T_spritesheet_13
+      rect:
+        serializedVersion: 2
+        x: 17
+        y: 0
+        width: 32
+        height: 63
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ff5f8b59128248844a0826037d6a2343
+      internalID: -2089589279
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CARRETERO_CACEDA_ANGELO_A3D_AE2D3D_1T_spritesheet_14
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 0
+        width: 32
+        height: 63
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a74f9ab3e0f596944a9c6b6bfec97978
+      internalID: 792795751
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CARRETERO_CACEDA_ANGELO_A3D_AE2D3D_1T_spritesheet_15
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 0
+        width: 32
+        height: 63
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4191478d40465a040863215ae8363ed9
+      internalID: -327588082
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CARRETERO_CACEDA_ANGELO_A3D_AE2D3D_1T_spritesheet_16
+      rect:
+        serializedVersion: 2
+        x: 205
+        y: 0
+        width: 32
+        height: 63
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ad620ed055e479f479d0843ec786225e
+      internalID: -1251277216
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CARRETERO_CACEDA_ANGELO_A3D_AE2D3D_1T_spritesheet_17
+      rect:
+        serializedVersion: 2
+        x: 273
+        y: 0
+        width: 32
+        height: 63
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b5838c1623a7e3644b1eacb70cd16bee
+      internalID: -757286119
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      CARRETERO_CACEDA_ANGELO_A3D_AE2D3D_1T_spritesheet_0: 784378807
+      CARRETERO_CACEDA_ANGELO_A3D_AE2D3D_1T_spritesheet_1: 1192087033
+      CARRETERO_CACEDA_ANGELO_A3D_AE2D3D_1T_spritesheet_10: 1776188061
+      CARRETERO_CACEDA_ANGELO_A3D_AE2D3D_1T_spritesheet_11: -2087047457
+      CARRETERO_CACEDA_ANGELO_A3D_AE2D3D_1T_spritesheet_12: -1821244033
+      CARRETERO_CACEDA_ANGELO_A3D_AE2D3D_1T_spritesheet_13: -2089589279
+      CARRETERO_CACEDA_ANGELO_A3D_AE2D3D_1T_spritesheet_14: 792795751
+      CARRETERO_CACEDA_ANGELO_A3D_AE2D3D_1T_spritesheet_15: -327588082
+      CARRETERO_CACEDA_ANGELO_A3D_AE2D3D_1T_spritesheet_16: -1251277216
+      CARRETERO_CACEDA_ANGELO_A3D_AE2D3D_1T_spritesheet_17: -757286119
+      CARRETERO_CACEDA_ANGELO_A3D_AE2D3D_1T_spritesheet_2: 1281284703
+      CARRETERO_CACEDA_ANGELO_A3D_AE2D3D_1T_spritesheet_3: -2038623642
+      CARRETERO_CACEDA_ANGELO_A3D_AE2D3D_1T_spritesheet_4: -1468614632
+      CARRETERO_CACEDA_ANGELO_A3D_AE2D3D_1T_spritesheet_5: -1116056673
+      CARRETERO_CACEDA_ANGELO_A3D_AE2D3D_1T_spritesheet_6: 517127010
+      CARRETERO_CACEDA_ANGELO_A3D_AE2D3D_1T_spritesheet_7: -2029685185
+      CARRETERO_CACEDA_ANGELO_A3D_AE2D3D_1T_spritesheet_8: 464542387
+      CARRETERO_CACEDA_ANGELO_A3D_AE2D3D_1T_spritesheet_9: -2108124599
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
