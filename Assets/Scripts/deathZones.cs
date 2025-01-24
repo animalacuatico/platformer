@@ -1,15 +1,16 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 
-public class deathZones : MonoBehaviour
+public class Deathzones1 : MonoBehaviour
 {
-    void Start()
+    public GameObject player;
+    private void OnTriggerEnter2D(Collider2D collision)
     {
-        
-    }
-    void Update()
-    {
-        
+        if (collision.gameObject.GetComponent<platformMovement>())
+        {
+            player.GetComponent<platformMovement>().ResetPlayerPos();
+        }
     }
 }
