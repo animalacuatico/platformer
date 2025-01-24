@@ -7,7 +7,6 @@ public class platformMovement : MonoBehaviour
     private Rigidbody2D rb2D;
     private Vector2 dirVector;
     public float speed = 5, jumpForce = 7, sphereRadius = 0.15f;
-    private float currentTime = 0;
     private bool isJumping = false;
     [SerializeField]
     private PlayerState currentstate;
@@ -20,7 +19,7 @@ public class platformMovement : MonoBehaviour
     void Update()
     {
         dirVector = new Vector2(Input.GetAxis("Horizontal"), 0); // Movimiento horizontal.
-        if (dirVector.magnitude == 0) // Si no nos estamos moviendo, calculando la medida del vector actual.
+        if (dirVector.magnitude == 0) // Calculando cuanto mide el vector del jugador con el .magnitude, se comprueba si hay movimiento o no.
         {
             currentstate = PlayerState.IDLE; // Se cambia el estado del jugador a IDLE.
         }
@@ -28,13 +27,12 @@ public class platformMovement : MonoBehaviour
         {
             currentstate = PlayerState.WALKING; // Si no, se cambia el estado del jugador a WALKING.
         }
-        Jump();
-        currentTime = Time.deltaTime;
+        Jump(); // Para que todo el rato esté detectando si se presiona espacio.
     }
     private void FixedUpdate()
     {
         rb2D.velocity = new Vector2(dirVector.x * speed, rb2D.velocity.y); // Para conservar la gravedad en y.
-        ApplyJump();
+        ApplyJump(); // Para aplicar el salto, cuando "isJumping" sea verdadero.
     }
     void Jump()
     {
@@ -46,7 +44,7 @@ public class platformMovement : MonoBehaviour
     }
     public void ApplyJump()
     {
-        if (isJumping)
+        if (isJumping) // Si isJumping es verdadero, se aplica el salto.
         {
             rb2D.velocity = new Vector2(rb2D.velocity.x, 0); // Para que siempre salte con la misma fuerza y la gravedad no le afecte.
             rb2D.AddForce(Vector2.up * jumpForce * rb2D.gravityScale, ForceMode2D.Impulse); // Aplicamos rb2D.gravityScale al final para asegurarnos que supera la gravedad. Se aplica el ForceMode2D.Impulse
@@ -63,7 +61,9 @@ public class platformMovement : MonoBehaviour
     //{
     //    Gizmos.color = Color.blue;
     //    Gizmos.DrawWireSphere(new Vector2(transform.position.x, transform.position.y - transform.localScale.y / 2), sphereRadius);
-    //} Esto estaba aqui pero no creo que sirva para nada.
+    //} Esto estaba aqui pero no creo que sirviera para nada.
+
+    // Métodos para usar en otros scripts
     public void ResetPlayerPos()
     {
         gameObject.transform.position = new Vector2(-10.52f, -1.49f);
@@ -75,5 +75,9 @@ public class platformMovement : MonoBehaviour
     public Vector2 getDirection()
     {
         return dirVector;
+    }
+    public void KillPlayer()
+    {
+        Destroy(gameObject);
     }
 }

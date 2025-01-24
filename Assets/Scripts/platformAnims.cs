@@ -27,13 +27,13 @@ public class platformAnims : MonoBehaviour
             case PlayerState.JUMPING:
                 break;
         }
-        if (platformMovement.getDirection().x < 0)
+        if (platformMovement.getDirection().x < 0) // Si el movimiento del jugador es hacia la izquierda (x<0)
         {
-            spriteRenderer.flipX = true;
+            spriteRenderer.flipX = true; // se gira a la izquierda.
         }
-        else if (platformMovement.getDirection().x > 0)
+        else if (platformMovement.getDirection().x > 0) // si el movimiento del jugador es hacia la derecha (x>0)
         {
-            spriteRenderer.flipX = false;
+            spriteRenderer.flipX = false; // se mantiene en la derecha.
         }
     }
 }
