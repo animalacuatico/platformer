@@ -57,13 +57,14 @@ public class platformMovement : MonoBehaviour
         Collider2D colliders = Physics2D.OverlapCircle(new Vector2(transform.position.x, transform.position.y - transform.localScale.y / 2), sphereRadius, groundMask); // Se "castea" un círculo desde los "pies" del jugador.
         return colliders != null; // El círculo que hemos casteado, no está en contacto con el suelo.
     }
-    //private void OnDrawGizmos()
-    //{
-    //    Gizmos.color = Color.blue;
-    //    Gizmos.DrawWireSphere(new Vector2(transform.position.x, transform.position.y - transform.localScale.y / 2), sphereRadius);
+    private void OnDrawGizmos()
+    {
+        Gizmos.color = Color.blue;
+        Gizmos.DrawWireSphere(new Vector2(transform.position.x, transform.position.y - transform.localScale.y / 2), sphereRadius);
+    }
     //} Esto estaba aqui pero no creo que sirviera para nada.
 
-    // Métodos para usar en otros scripts
+        // Métodos para usar en otros scripts
     public void ResetPlayerPos()
     {
         gameObject.transform.position = new Vector2(-10.52f, -1.49f);
