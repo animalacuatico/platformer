@@ -6,7 +6,8 @@ public class platformMovement : MonoBehaviour
 {
     private Rigidbody2D rb2D;
     private Vector2 dirVector;
-    public float speed = 5, jumpForce = 7, sphereRadius = 0.15f;
+    public float speed = 5, jumpForce = 7, sphereRadius = 0.15f, jumpingVolume = 3;
+    public AudioClip jumpingClip;
     private bool isJumping = false;
     [SerializeField]
     private PlayerState currentstate;
@@ -40,6 +41,7 @@ public class platformMovement : MonoBehaviour
         {
             isJumping = true; // Activa isJumping.
             currentstate = PlayerState.JUMPING; // Cambia el estado del jugador a JUMPING.
+            audioManager.instance.PlayAudio(jumpingClip, "jumpingSoundsObject");
         }
     }
     public void ApplyJump()
