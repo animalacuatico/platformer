@@ -7,7 +7,7 @@ public class backgroundMusic : MonoBehaviour
 {
     public AudioClip music;
     bool isLoop = true;
-    public float MusicVolume = 5;
+    public float MusicVolume = 1;
     void Start()
     {
         audioManager.instance.PlayAudio(music, "backgroundMusic", isLoop, MusicVolume);
