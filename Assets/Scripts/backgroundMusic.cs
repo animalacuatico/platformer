@@ -10,6 +10,6 @@ public class backgroundMusic : MonoBehaviour
     public float MusicVolume = 1;
     void Start()
     {
-        audioManager.instance.PlayAudio(music, "backgroundMusic", isLoop, MusicVolume);
+        audioManager.instance.PlayAudio(music, "backgroundMusic");
     }
 }

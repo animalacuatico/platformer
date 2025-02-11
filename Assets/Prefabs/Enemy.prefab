@@ -103,3 +103,4 @@ MonoBehaviour:
     m_Bits: 128
   enemy: {fileID: 4682157856880954132}
   assignedPlayer: {fileID: 0}
+  enemyDeathSound: {fileID: 8300000, guid: 13d3262066ec7fa45bd522d21f247266, type: 3}

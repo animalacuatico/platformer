@@ -7,6 +7,7 @@ public class platformAnims : MonoBehaviour
     private Animator animator;
     private platformMovement platformMovement;
     private SpriteRenderer spriteRenderer;
+    public AudioClip AnimTestSound;
     void Start()
     {
         animator = GetComponent<Animator>();
@@ -35,5 +36,9 @@ public class platformAnims : MonoBehaviour
         {
             spriteRenderer.flipX = false; // se mantiene en la derecha.
         }
+    }
+    public void PlayAnimTest(float volume)
+    {
+        audioManager.instance.PlayAudio(AnimTestSound, "testingsound", false, volume);
     }
 }

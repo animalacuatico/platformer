@@ -20,7 +20,6 @@ public class updateText : MonoBehaviour
                 break;
             case InterfaceVariable.TIME:
                 textComponent.text = "Tiempo actual: " + GameManager.instance.GetTime().ToString("00.00" + " s");
-
                 break;
         }
     }

@@ -41,7 +41,7 @@ public class platformMovement : MonoBehaviour
         {
             isJumping = true; // Activa isJumping.
             currentstate = PlayerState.JUMPING; // Cambia el estado del jugador a JUMPING.
-            audioManager.instance.PlayAudio(jumpingClip, "jumpingSoundsObject");
+            audioManager.instance.PlayAudio(jumpingClip, "jumpSound");
         }
     }
     public void ApplyJump()

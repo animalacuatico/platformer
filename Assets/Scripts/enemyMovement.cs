@@ -11,6 +11,7 @@ public class enemyMovement : MonoBehaviour
     public LayerMask playerMask;
     public GameObject enemy, assignedPlayer;
     private Vector2 xpos;
+    public AudioClip enemyDeathSound;
     private float enemyPosX;
     void Start()
     {
@@ -30,6 +31,7 @@ public class enemyMovement : MonoBehaviour
         }
         if (CheckTop())
         {
+            audioManager.instance.PlayAudio(enemyDeathSound, "enemyDeathSounds");
             Destroy(gameObject);
         }
     }
