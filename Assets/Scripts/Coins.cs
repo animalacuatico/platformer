@@ -12,8 +12,15 @@ public class Coins : MonoBehaviour
         {
             GameManager.instance.AddCoin(coinValue);
             Debug.Log("Monedas: " + GameManager.instance.GetCoins());
-            RandomChance();
-            if (RandomChance())
+            int audios = RandomChance();
+            if (audios == 0)
+            {
+                audioManager.instance.PlayAudio(coinSound1, "coinAudio1");
+            }
+            else
+            {
+                audioManager.instance.PlayAudio(coinSound2, "coinAudio2");
+            }
             Destroy(gameObject);
             
         }
