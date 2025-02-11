@@ -19,7 +19,8 @@ public class updateText : MonoBehaviour
                 textComponent.text = "Monedas actuales: " + GameManager.instance.GetCoins();
                 break;
             case InterfaceVariable.TIME:
-                textComponent.text = "Tiempo actual: " + GameManager.instance.GetTime();
+                textComponent.text = "Tiempo actual: " + GameManager.instance.GetTime().ToString("00.00" + " s");
+
                 break;
         }
     }

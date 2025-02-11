@@ -25,7 +25,6 @@ public class GameManager : MonoBehaviour
     void Update()
     {
         currentGameTime += Time.deltaTime;
-        currentGameTime = Mathf.Round(currentGameTime * 100) / 100;
     }
     public float GetTime() // Método para saber el tiempo que lleva la aplicación activa.
     {
