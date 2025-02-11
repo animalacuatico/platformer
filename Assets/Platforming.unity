@@ -3363,6 +3363,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 1712787048}
+  deathzone_reset: {fileID: 8300000, guid: c99da58fa353cec41a9b07d4df4b3e5e, type: 3}
 --- !u!61 &940823622
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -5929,7 +5930,7 @@ MonoBehaviour:
   jumpForce: 7
   sphereRadius: 0.15
   jumpingVolume: 3
-  jumpingClip: {fileID: 8300000, guid: 8b0d7377f1c04d14ab6f33dc97b9f5e3, type: 3}
+  jumpingClip: {fileID: 8300000, guid: 584d7c35e9eb7964d8631ea366b7af76, type: 3}
   currentstate: 0
   groundMask:
     serializedVersion: 2
