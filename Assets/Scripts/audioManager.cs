@@ -21,7 +21,7 @@ public class audioManager : MonoBehaviour
             Destroy(gameObject);
         }
     }
-    public AudioSource PlayAudio(AudioClip clip, string gameObjectName, bool isLoop = false, float volume = 1.0f)
+    public AudioSource PlayAudio(AudioClip clip, string gameObjectName, bool isLoop = false, float volume = 1.0f) // Crear este método que sirve para todos los scripts.
     {
         // 1. Crear empty:
         GameObject nObject = new GameObject();
@@ -43,7 +43,7 @@ public class audioManager : MonoBehaviour
         StartCoroutine(WaitForAudio(audioSourceComponent));
         return audioSourceComponent;
     }
-    private IEnumerator WaitForAudio(AudioSource source)
+    private IEnumerator WaitForAudio(AudioSource source) // Un método que destruye el objeto del sonido creado una vez termina.
     {
         if (source.loop)
         {

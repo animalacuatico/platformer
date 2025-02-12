@@ -6,9 +6,8 @@ using UnityEngine;
 public class backgroundMusic : MonoBehaviour
 {
     public AudioClip music;
-    public float MusicVolume = 1;
     void Start()
     {
-        audioManager.instance.PlayAudio(music, "backgroundMusic");
+        audioManager.instance.PlayAudio(music, "backgroundMusic", true); // Poner la música de fondo en true para que sea un loop constante.
     }
 }

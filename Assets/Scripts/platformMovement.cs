@@ -64,22 +64,20 @@ public class platformMovement : MonoBehaviour
         Gizmos.color = Color.blue;
         Gizmos.DrawWireSphere(new Vector2(transform.position.x, transform.position.y - transform.localScale.y / 2), sphereRadius);
     }
-    //} Esto estaba aqui pero no creo que sirviera para nada.
-
-        // Métodos para usar en otros scripts
-    public void ResetPlayerPos()
+    // Métodos para usar en otros scripts
+    public void ResetPlayerPos() // Un método para resetear la posición del jugador al comienzo.
     {
         gameObject.transform.position = new Vector2(-10.52f, -1.49f);
     }
-    public PlayerState GetPlayerState()
+    public PlayerState GetPlayerState() // Método para obtener el estado del jugador, si se está moviendo o no, saltando.. etc.
     {
         return currentstate;
     }
-    public Vector2 getDirection()
+    public Vector2 getDirection() // Método para obtener la dirección del jugador.
     {
         return dirVector;
     }
-    public void KillPlayer()
+    public void KillPlayer() // Método que "mata" al jugador.
     {
         Destroy(gameObject);
     }

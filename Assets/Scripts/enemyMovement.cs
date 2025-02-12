@@ -31,7 +31,7 @@ public class enemyMovement : MonoBehaviour
         }
         if (CheckTop())
         {
-            audioManager.instance.PlayAudio(enemyDeathSound, "enemyDeathSounds");
+            audioManager.instance.PlayAudio(enemyDeathSound, "enemyDeathSounds"); // Si el jugador toca al enemigo por arriba, pone el sonido de muerte y luego se destruye el enemigo.
             Destroy(gameObject);
         }
     }
