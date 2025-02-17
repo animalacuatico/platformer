@@ -11,7 +11,7 @@ public class enemyMovement : MonoBehaviour
     public LayerMask playerMask;
     public GameObject enemy, assignedPlayer;
     private Vector2 xpos;
-    public AudioClip enemyDeathSound;
+    public AudioClip enemyDeathSound, playerDeathSound;
     private float enemyPosX;
     void Start()
     {
@@ -24,7 +24,8 @@ public class enemyMovement : MonoBehaviour
         transform.position = Vector2.MoveTowards(transform.position, xpos, enemySpeed * Time.deltaTime);
         if (CheckSides())
         {
-            assignedPlayer.GetComponent<platformMovement>().ResetPlayerPos(); 
+            assignedPlayer.GetComponent<platformMovement>().ResetPlayerPos();
+            audioManager.instance.PlayAudio(playerDeathSound, "playerDeathSound");
             // Sé que en la tarea ponía que se debía de destruir el player, pero para que no tenga que resetear todo el rato la escena he hecho que se resetee su posición.
             // Para que el jugador se destruya cuando el enemigo lo toca por los lados, descomenta la línea inferior en este método.
             // assignedPlayer.GetComponent<platformMovement>().KillPlayer();
