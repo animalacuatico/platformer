@@ -17,7 +17,7 @@ public class Coins : MonoBehaviour
             {
                 audioManager.instance.PlayAudio(coinSound1, "coinAudio1");
             }
-            else // Si es 1, el segundo audio.
+            else // Si es cualquier otro, el segundo audio.
             {
                 audioManager.instance.PlayAudio(coinSound2, "coinAudio2");
             }
@@ -27,7 +27,7 @@ public class Coins : MonoBehaviour
     private int RandomChance() // Método para generar un número entre 0 y 1.
     {
         int rndNumber;
-        rndNumber = Random.Range(0, 2);
+        rndNumber = Random.Range(0, 101);
         return rndNumber;
     }
 }
