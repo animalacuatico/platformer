@@ -13,7 +13,7 @@ public class updateText : MonoBehaviour
     }
     void Update()
     {
-        switch(variableToUpdate)
+        switch(variableToUpdate) // Mediante un switch, establezco las siguientes variables para que se actualicen constantemente.
         {
             case InterfaceVariable.COINS_GAME:
                 textComponent.text = "Monedas actuales: " + GameManager.instance.GetCoins();

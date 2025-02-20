@@ -7,11 +7,15 @@ public class buttonPrograms : MonoBehaviour
 {
     public void LoadMenuScene()
     {
-        SceneManager.LoadScene("Menu");
+        GameManager.instance.ChangeScene("Menu");
     }
     public void LoadPlatformer()
     {
-        SceneManager.LoadScene("Platforming");
+        GameManager.instance.ChangeScene("Platforming");
     }
-    
+    //private void start()
+    //{
+    //    GameManager.instance.ChangeScene("Menu");
+    //    GameManager.instance.ChangeScene("Platforming");
+    //}
 }
